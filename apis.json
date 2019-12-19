@@ -1,0 +1,58 @@
+{
+    "name": "Refuge Restrooms",
+    "description": "<p>Refuge Restrooms is a web application that seeks to provide safe restroom access for transgender, intersex, and gender nonconforming individuals. Users can search for restrooms by proximity to a search location, add new restroom listings, as well as comment and rate existing listings. We&rsquo;re trans led and seek to create a community focused not only on finding existing safe restroom access, but also advocating for transgender, intersex, and gender nonconforming people&rsquo;s safety.<\/p>",
+    "image": "https:\/\/s3.amazonaws.com\/kinlane-productions\/api-evangelist-logos\/api-evangelist-red-seal.png",
+    "tags": [
+        "general data",
+        "have api",
+        "have swagger",
+        "restrooms"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/refuge-restrooms\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Refuge Restrooms",
+            "description": null,
+            "image": "https:\/\/s3.amazonaws.com\/kinlane-productions\/api-evangelist-logos\/api-evangelist-red-seal.png",
+            "humanURL": "http:\/\/refugerestrooms.org",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/refuge-restrooms.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/refuge-restrooms-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/refuge-restrooms-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Documentation",
+            "url": "https:\/\/refugerestrooms.org\/api\/docs\/"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/28491-2019-09-03-16-23-37.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/28491-2019-09-04-01-32-05.json"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/refugerestrooms.org"
+        }
+    ]
+}

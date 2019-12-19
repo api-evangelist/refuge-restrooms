@@ -1,0 +1,298 @@
+{
+    "id": "bc25e8d4408a25793d9e3ec05efe146e",
+    "name": "Refuge Restrooms",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "dba209634ecc32b6d669f6b1a548bb3b",
+            "name": "Get all restroom records ordered by date descending.",
+            "url": "httpswww.refugerestrooms.org\/api\/v1\/restrooms.json",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "page",
+                    "description": "Page offset to fetch.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "per_page",
+                    "description": "Number of results to return per page.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Pad a number of results.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ada",
+                    "description": "Only return restrooms that are ADA accessible.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "unisex",
+                    "description": "Only return restrooms that are unisex.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bc25e8d4408a25793d9e3ec05efe146e",
+            "rawModeData": ""
+        },
+        {
+            "id": "c8d2d69be41dbf717885fbe824aae6f0",
+            "name": "Search for restroom records updated or created on or after a given date",
+            "url": "httpswww.refugerestrooms.org\/api\/v1\/restrooms\/by_date.json",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "page",
+                    "description": "Page offset to fetch.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "per_page",
+                    "description": "Number of results to return per page.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Pad a number of results.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ada",
+                    "description": "Only return restrooms that are ADA accessible.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "unisex",
+                    "description": "Only return restrooms that are unisex.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "updated",
+                    "description": "Return restroom records updated (rather than created) since given date",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "day",
+                    "description": "Day",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "month",
+                    "description": "Month",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "year",
+                    "description": "Year",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bc25e8d4408a25793d9e3ec05efe146e",
+            "rawModeData": ""
+        },
+        {
+            "id": "e400f5aacd2ca1f07b09e2638b8a144b",
+            "name": "Search by location.",
+            "url": "httpswww.refugerestrooms.org\/api\/v1\/restrooms\/by_location.json",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "page",
+                    "description": "Page offset to fetch.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "per_page",
+                    "description": "Number of results to return per page.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Pad a number of results.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ada",
+                    "description": "Only return restrooms that are ADA accessible.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "unisex",
+                    "description": "Only return restrooms that are unisex.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lat",
+                    "description": "latitude",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lng",
+                    "description": "longitude",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bc25e8d4408a25793d9e3ec05efe146e",
+            "rawModeData": ""
+        },
+        {
+            "id": "d35c617c4e3e82c7c75375228b79a381",
+            "name": "Perform full-text search of restroom records.",
+            "url": "httpswww.refugerestrooms.org\/api\/v1\/restrooms\/search.json",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "page",
+                    "description": "Page offset to fetch.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "per_page",
+                    "description": "Number of results to return per page.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Pad a number of results.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ada",
+                    "description": "Only return restrooms that are ADA accessible.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "unisex",
+                    "description": "Only return restrooms that are unisex.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "query",
+                    "description": "Your search query.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bc25e8d4408a25793d9e3ec05efe146e",
+            "rawModeData": ""
+        }
+    ]
+}

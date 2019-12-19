@@ -1,0 +1,192 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1",
+        "title": "Refuge Restrooms",
+        "description": "REFUGE is a web application that seeks to provide safe restroom access for transgender, intersex, and gender nonconforming individuals.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpswww.refugerestrooms.org\/api"
+    ],
+    "paths": {
+        "\/v1\/restrooms.json": {
+            "get": {
+                "summary": "Get all restroom records ordered by date descending.",
+                "description": "",
+                "operationId": "V1RestroomsJsonGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page offset to fetch."
+                    },
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "description": "Number of results to return per page."
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Pad a number of results."
+                    },
+                    {
+                        "name": "ada",
+                        "in": "query",
+                        "description": "Only return restrooms that are ADA accessible."
+                    },
+                    {
+                        "name": "unisex",
+                        "in": "query",
+                        "description": "Only return restrooms that are unisex."
+                    }
+                ]
+            }
+        },
+        "\/v1\/restrooms\/by_date.json": {
+            "get": {
+                "summary": "Search for restroom records updated or created on or after a given date",
+                "description": "",
+                "operationId": "V1RestroomsByDateJsonGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page offset to fetch."
+                    },
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "description": "Number of results to return per page."
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Pad a number of results."
+                    },
+                    {
+                        "name": "ada",
+                        "in": "query",
+                        "description": "Only return restrooms that are ADA accessible."
+                    },
+                    {
+                        "name": "unisex",
+                        "in": "query",
+                        "description": "Only return restrooms that are unisex."
+                    },
+                    {
+                        "name": "updated",
+                        "in": "query",
+                        "description": "Return restroom records updated (rather than created) since given date"
+                    },
+                    {
+                        "name": "day",
+                        "in": "query",
+                        "description": "Day"
+                    },
+                    {
+                        "name": "month",
+                        "in": "query",
+                        "description": "Month"
+                    },
+                    {
+                        "name": "year",
+                        "in": "query",
+                        "description": "Year"
+                    }
+                ]
+            }
+        },
+        "\/v1\/restrooms\/by_location.json": {
+            "get": {
+                "summary": "Search by location.",
+                "description": "",
+                "operationId": "V1RestroomsByLocationJsonGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page offset to fetch."
+                    },
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "description": "Number of results to return per page."
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Pad a number of results."
+                    },
+                    {
+                        "name": "ada",
+                        "in": "query",
+                        "description": "Only return restrooms that are ADA accessible."
+                    },
+                    {
+                        "name": "unisex",
+                        "in": "query",
+                        "description": "Only return restrooms that are unisex."
+                    },
+                    {
+                        "name": "lat",
+                        "in": "query",
+                        "description": "latitude"
+                    },
+                    {
+                        "name": "lng",
+                        "in": "query",
+                        "description": "longitude"
+                    }
+                ]
+            }
+        },
+        "\/v1\/restrooms\/search.json": {
+            "get": {
+                "summary": "Perform full-text search of restroom records.",
+                "description": "",
+                "operationId": "V1RestroomsSearchJsonGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page offset to fetch."
+                    },
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "description": "Number of results to return per page."
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Pad a number of results."
+                    },
+                    {
+                        "name": "ada",
+                        "in": "query",
+                        "description": "Only return restrooms that are ADA accessible."
+                    },
+                    {
+                        "name": "unisex",
+                        "in": "query",
+                        "description": "Only return restrooms that are unisex."
+                    },
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "Your search query."
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}

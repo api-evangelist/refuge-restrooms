@@ -8,8 +8,8 @@
         "have swagger",
         "restrooms"
     ],
-    "created": "2019-12-19",
-    "modified": "2019-12-19",
+    "created": "2019-12-21",
+    "modified": "2019-12-21",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/refuge-restrooms\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
@@ -27,17 +27,17 @@
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/refuge-restrooms-openapi.json"
-                },
-                {
-                    "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/refuge-restrooms-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/refuge-restrooms\/master\/refuge-restrooms-openapi.json"
                 }
             ]
         }
     ],
     "include": [],
     "x-common": [
+        {
+            "type": "APIs.json",
+            "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apis.json"
+        },
         {
             "type": "Documentation",
             "url": "https:\/\/refugerestrooms.org\/api\/docs\/"

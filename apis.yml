@@ -1,4 +1,16 @@
 aid: refuge-restrooms
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/refuge-restrooms.png
 name: REFUGE Restrooms
 description: "Provides safe restroom access for transgender, intersex and gender nonconforming individuals"
 url: https://www.refugerestrooms.org/api/docs/#!/restrooms

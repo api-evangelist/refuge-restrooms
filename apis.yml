@@ -39,7 +39,6 @@ apis:
   - name: REFUGE Restrooms
     description: "Provides safe restroom access for transgender, intersex and gender nonconforming individuals"
     humanURL: https://www.refugerestrooms.org/api/docs/#!/restrooms
-    baseURL: https://www.refugerestrooms.org/api/docs/#!/restrooms
     tags:
       - Transportation
     properties:
